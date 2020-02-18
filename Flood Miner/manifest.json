@@ -1,0 +1,27 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Mine groups of same typed blocks all at once!",
+        "name": "Flood Miner",
+        "uuid": "bd57cd63-50b4-4cbb-9507-de8974fe176c",
+        "version": [ 0, 0, 1 ],
+        "min_engine_version": [ 1, 14, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Supposedly this description isn't used.",
+            "type": "data",
+            "uuid": "16757e8d-d742-49d3-a3e3-ad054d1ce049",
+            "version": [0, 0, 1]
+        },
+        {
+            "description": "Server needs to know that there are client scripts",
+            "type": "client_data",
+            "uuid": "714aedf9-4d9c-4e30-8c6d-8d3efe429f00",
+            "version": [0, 0, 1]
+        }
+    ],
+    "dependencies": [
+        
+    ]
+}
