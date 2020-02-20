@@ -106,15 +106,13 @@ serverSystem.floodmine = function(eventData){
                         }
                         if(block.__identifier__ == eventData.data.block_identifier || exception){
 
-                            let block_string = JSON.stringify(block.block_position)
-
                             let existsInMarked = marked.some(function(position){
-                                return JSON.stringify(position) == block_string
+                                return serverSystem.compPos(position, block.block_position)
                             })
 
                             if(!existsInMarked){
                                 let existsInQueue = queue.some(function(position){
-                                    return JSON.stringify(position) == block_string
+                                    return serverSystem.compPos(position, block.block_position)
                                 })
                                 if(!existsInQueue){
                                     marked.push(block.block_position)
@@ -138,4 +136,8 @@ serverSystem.floodmine = function(eventData){
         chatEventData.data.message = message
         this.broadcastEvent("minecraft:display_chat_event", chatEventData) 
     }
+}
+
+serverSystem.compPos = function(p1, p2){
+    return p1.x == p2.x && p1.y == p2.y && p1.z == p2.z
 }
