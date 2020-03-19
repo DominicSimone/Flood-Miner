@@ -27,7 +27,8 @@ serverSystem.update = function(){
     if(marked.length > 0){
         let pos = marked.shift()
         let commandData = this.createEventData("minecraft:execute_command")
-        commandData.data.command = "/setblock " + pos.x + " " + pos.y + " " + pos.z + " air 0 destroy"
+        //Definitely won't work in multiplayer now with this @p
+        commandData.data.command = "/execute @p ~ ~ ~ setblock " + pos.x + " " + pos.y + " " + pos.z + " air 0 destroy"
         this.broadcastEvent("minecraft:execute_command", commandData)
     }
 }
