@@ -8,6 +8,7 @@ Sneak before you start mining a block, and unsneak before destroying a block to 
 var serverSystem = server.registerSystem(0, 0);
 
 var maxFloodSize = 32 - 1;
+var hungerSecondsPerBlock = .15;
 var marked = [];
 var debug = false;
 
@@ -126,6 +127,14 @@ serverSystem.floodmine = function(eventData){
             })
         }
     } 
+
+    //Apply nausea debuff based on the number of blocks marked
+    let hungerTime = Math.floor(hungerSecondsPerBlock * marked.length);
+    if(hungerTime > 0){
+        let commandData = this.createEventData("minecraft:execute_command")
+        commandData.data.command = "/execute @p ~ ~ ~ effect @p hunger " + hungerTime + " 2 true"
+        this.broadcastEvent("minecraft:execute_command", commandData)
+    }
     
     if(debug){
         let message = "Blocks acquired: "
