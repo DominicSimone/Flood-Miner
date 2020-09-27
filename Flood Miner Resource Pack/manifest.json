@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Flood miner resource pack",
+        "name": "Flood Miner Resource Pack",
+        "uuid": "18477088-32eb-434c-95cd-6a2c360f8d47",
+        "version": [0, 0, 3],
+        "min_engine_version": [ 1, 14, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Flood Miner resource pack",
+            "type": "resources",
+            "uuid": "c87153c0-ccc9-43ae-9843-01e644d377e3",
+            "version": [0, 0, 3]
+        }
+    ]
+}

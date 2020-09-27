@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "floodminer:world_essence",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "world_essence",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

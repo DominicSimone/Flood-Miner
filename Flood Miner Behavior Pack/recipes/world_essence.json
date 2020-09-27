@@ -1,0 +1,47 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "floodminer:world_essence"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:dirt"
+            },
+            {
+                "item": "minecraft:gravel"
+            },
+            {
+                "item": "minecraft:sand"
+            },
+            {
+                "item": "minecraft:coal_block"
+            },
+            {
+                "item": "minecraft:iron_ore"
+            },
+            {
+                "item": "minecraft:stone",
+                "data": 0
+            },
+            {
+                "item": "minecraft:stone",
+                "data": 1
+            },
+            {
+                "item": "minecraft:stone",
+                "data": 3
+            },
+            {
+                "item": "minecraft:stone",
+                "data": 5
+            }
+        ],
+        "result": {
+            "item": "floodminer:world_essence"
+        }
+    }
+}

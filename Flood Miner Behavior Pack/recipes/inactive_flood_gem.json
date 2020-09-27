@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "floodminer:inactive_flood_gem"
+      },
+  
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "III",
+        "IEI",
+        "III"
+      ],
+      "key": {
+        "I": {
+          "item": "minecraft:iron_ingot"
+        },
+        "E": {
+          "item": "floodminer:world_essence"
+        }
+      },
+      "result": {
+        "item": "floodminer:inactive_flood_gem"
+      }
+    }
+    
+  }
+  

@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+      "description": {
+        "identifier": "floodminer:active_flood_gem",
+        "category": "Equipment"
+      },
+  
+      "components": {
+        "minecraft:icon": "active_flood_gem",
+        "minecraft:render_offsets": "tools"
+      }
+    }
+  }

@@ -1,0 +1,15 @@
+{
+    "resource_pack_name": "floodminer",
+    "texture_name" : "atlas.items",
+    "texture_data": {
+        "active_flood_gem": {
+            "textures" : "textures/items/active_flood_gem"
+        },
+        "inactive_flood_gem": {
+            "textures" : "textures/items/inactive_flood_gem"
+        },
+        "world_essence": {
+            "textures" : "textures/items/world_essence"
+        }
+    }
+}
