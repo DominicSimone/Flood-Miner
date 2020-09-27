@@ -5,8 +5,10 @@ A vein miner analog for Minecraft Bedrock (1.16). If you aren't familiar with ve
 
 Step one: Craft World Essence
 - Combine dirt, gravel, sand, a coal block, iron ore, stone, andesite, granite, and diorite in a crafting bench to create a World Essence item. This is a shapeless recipe.
+
 Step two: Craft flood gem
 - Surround the World Essence item with 8 iron in a crafting bench to craft an Inactive Flood Gem.
+
 Step three: Activate, then mine
 - Put the gem in your hand and right click to convert it to the active version. Using it again will convert it back to inactive. Mining a block with an Active Flood Gem in your **hotbar** will trigger a floodmine.
 
