@@ -23,7 +23,7 @@ serverSystem.update = function(){
         // Definitely won't work in multiplayer now with this @p
         commandData.data.command = "/execute @p ~ ~ ~ setblock " + pos.x + " " + pos.y + " " + pos.z + " air 0 destroy"
         this.broadcastEvent("minecraft:execute_command", commandData)
-        commandData.data.command = "/execute @p ~ ~ ~ teleport @e[type=item,x=" + pos.x + ",y=" + pos.y + ",z=" + pos.z + ",r=2] ~ ~1 ~"
+        commandData.data.command = "/execute @p ~ ~ ~ teleport @e[type=item,x=" + pos.x + ",y=" + pos.y + ",z=" + pos.z + ",r=2] ~ ~ ~"
         this.broadcastEvent("minecraft:execute_command", commandData)
     }
 }
